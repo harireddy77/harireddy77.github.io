@@ -1,3 +1,13 @@
+// Contact details: hidden until the visitor clicks the button
+const contactToggle = document.getElementById("contact-toggle");
+const contactDetails = document.getElementById("contact-details");
+contactToggle.addEventListener("click", () => {
+  const open = contactDetails.hidden;
+  contactDetails.hidden = !open;
+  contactToggle.setAttribute("aria-expanded", String(open));
+  contactToggle.textContent = open ? "Hide contact details" : "Show contact details";
+});
+
 // Enable reveal animations only when JavaScript is running
 document.documentElement.classList.add("js");
 

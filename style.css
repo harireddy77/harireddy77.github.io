@@ -426,3 +426,7 @@ body { overflow-x: hidden; }
 .bg-secure::before {
   background: radial-gradient(ellipse at 50% 110%, rgba(61, 255, 160, 0.2), transparent 60%);
 }
+
+/* Contact details (revealed on click) */
+.contact-details { margin-top: 1.5rem; display: flex; flex-direction: column; gap: 1rem; }
+.contact-details[hidden] { display: none; }
