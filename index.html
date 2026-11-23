@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Komma Hari Krishna Reddy — SOC Analyst. Alert triage, detection engineering, and incident response with Microsoft Sentinel, Wazuh and Splunk." />
+  <title>Hari Reddy — SOC Analyst</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="scanline" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <a href="#top" class="logo"><span class="prompt">&gt;</span> hari<span class="blink">_</span></a>
+    <nav>
+      <a href="#experience">Experience</a>
+      <a href="#projects">Projects</a>
+      <a href="#attack">ATT&amp;CK</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main id="top">
+
+    <!-- HERO -->
+    <section class="hero band bg-radar">
+      <div class="terminal">
+        <div class="terminal-bar">
+          <span class="dot red"></span><span class="dot amber"></span><span class="dot green"></span>
+          <span class="terminal-title">soc@hari:~</span>
+        </div>
+        <div class="terminal-body">
+          <p><span class="prompt">$</span> whoami</p>
+          <p class="out">Komma Hari Krishna Reddy</p>
+          <p><span class="prompt">$</span> cat role.txt</p>
+          <p class="out"><span id="typed"></span><span class="cursor">▌</span></p>
+          <p><span class="prompt">$</span> status --location</p>
+          <p class="out">Hyderabad, India · open to 24/7 rotational shifts</p>
+        </div>
+      </div>
+
+      <h1 class="hero-title">Watching the wire,<br /><span class="accent">so the business doesn't have to.</span></h1>
+      <p class="hero-sub">
+        SOC Analyst Intern at an MSSP. I triage security alerts, tune detections, and
+        turn noisy signal into clear, actionable incidents.
+      </p>
+      <div class="hero-actions">
+        <a href="#projects" class="btn primary">View detection labs</a>
+        <a href="#contact" class="btn">Contact me</a>
+      </div>
+    </section>
+
+    <!-- STATS -->
+    <section class="stats band bg-grid" aria-label="Key numbers">
+      <div class="stat"><span class="num" data-target="40">0</span><span class="label">alerts triaged / day</span></div>
+      <div class="stat"><span class="num" data-target="70" data-suffix="%">0</span><span class="label">alert noise reduced</span></div>
+      <div class="stat"><span class="num" data-target="100" data-suffix="%">0</span><span class="label">client SLA compliance</span></div>
+      <div class="stat"><span class="num" data-target="1000" data-suffix="+">0</span><span class="label">records audited weekly</span></div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section id="experience" class="section reveal band bg-logs">
+      <p class="section-tag">01 // experience</p>
+      <h2>Where I've worked</h2>
+      <ol class="timeline">
+        <li>
+          <div class="when">May 2026 – Present</div>
+          <h3>SOC Analyst Intern <span class="muted">· TerraEagle (MSSP)</span></h3>
+          <p class="where">Hyderabad (Remote)</p>
+          <ul>
+            <li>Triage ~40 Wazuh alerts per day across 3 production client environments, classifying each as true positive, false positive, or escalation.</li>
+            <li>Tuned noisy, repetitive alert signatures, cutting alert noise by 70% and the false-positive load on the queue, with 100% SLA compliance.</li>
+            <li>Investigate using event details, timelines, affected assets and IOC reputation checks; escalate confirmed incidents with documented findings.</li>
+            <li>Document incidents in the case management platform, following SOC runbooks and shift handover procedures.</li>
+          </ul>
+        </li>
+        <li>
+          <div class="when">May 2025 – Mar 2026</div>
+          <h3>Quality Analyst <span class="muted">· Wipro Limited</span></h3>
+          <ul>
+            <li>Sole analyst auditing 1,000+ AI-generated records weekly for anomalies, misclassifications and compliance gaps, at 99%+ accuracy over 11 months.</li>
+            <li>Authored SOPs, verification checklists and escalation workflows used by the team.</li>
+          </ul>
+        </li>
+      </ol>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="section reveal band bg-incident">
+      <p class="section-tag">02 // projects</p>
+      <h2>Detection labs</h2>
+      <p class="lead">Hands-on labs I built end to end: simulate the attack, ingest the logs, write the detection, triage, and report.</p>
+
+      <div class="incidents">
+        <article class="incident">
+          <header class="incident-head">
+            <span class="sev high">HIGH</span>
+            <h3>Cloud SOC Detection Lab</h3>
+          </header>
+          <p class="stack">Azure · Microsoft Sentinel · Defender XDR</p>
+          <ul>
+            <li>Built an Azure SOC from scratch: Log Analytics workspace, Sentinel, and 7 Defender XDR and identity connectors.</li>
+            <li>Wrote 5 custom KQL analytics rules that generate High-severity incidents, validated against simulated attacks.</li>
+            <li>Wrote 5 incident reports covering IOCs, ATT&amp;CK mapping and remediation.</li>
+          </ul>
+          <div class="tags">
+            <span>T1110.003</span><span>T1566.001</span><span>T1078</span><span>T1059.001</span><span>T1569.001</span>
+          </div>
+        </article>
+
+        <article class="incident">
+          <header class="incident-head">
+            <span class="sev med">MED</span>
+            <h3>Network Attack Detection Lab</h3>
+          </header>
+          <p class="stack">Kali Linux · Splunk · Wireshark</p>
+          <ul>
+            <li>Simulated SSH brute force, Nmap recon, ARP spoofing, DNS tunneling and C2 beaconing; analysed the traffic in Wireshark.</li>
+            <li>Built SPL detection rules and dashboards for each attack, mapped to Cyber Kill Chain stages.</li>
+          </ul>
+          <div class="tags">
+            <span>T1110.001</span><span>T1048</span><span>T1071.004</span>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ATT&CK -->
+    <section id="attack" class="section reveal band bg-matrix">
+      <p class="section-tag">03 // coverage</p>
+      <h2>MITRE ATT&amp;CK techniques</h2>
+      <p class="lead">Techniques I've written detections for or investigated, grouped by tactic.</p>
+      <div class="matrix">
+        <div class="tactic">
+          <h4>Initial Access</h4>
+          <span class="tech" title="Phishing: Spearphishing Link">T1566.001 Spearphishing</span>
+          <span class="tech" title="Valid Accounts">T1078 Impossible travel</span>
+        </div>
+        <div class="tactic">
+          <h4>Credential Access</h4>
+          <span class="tech" title="Password Spraying">T1110.003 Password spray</span>
+          <span class="tech" title="Password Guessing">T1110.001 SSH brute force</span>
+        </div>
+        <div class="tactic">
+          <h4>Execution</h4>
+          <span class="tech" title="PowerShell">T1059.001 Obfuscated PowerShell</span>
+        </div>
+        <div class="tactic">
+          <h4>Persistence</h4>
+          <span class="tech" title="Launchctl">T1569.001 launchctl persistence</span>
+        </div>
+        <div class="tactic">
+          <h4>Command &amp; Control</h4>
+          <span class="tech" title="Application Layer Protocol: Web">T1071.004 C2 beaconing (DNS)</span>
+        </div>
+        <div class="tactic">
+          <h4>Exfiltration</h4>
+          <span class="tech" title="Exfiltration over alternative protocol">T1048 DNS tunneling</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="section reveal band bg-circuit">
+      <p class="section-tag">04 // toolkit</p>
+      <h2>Skills</h2>
+      <div class="skill-grid">
+        <div class="skill-group">
+          <h4>SIEM &amp; XDR</h4>
+          <ul>
+            <li>Microsoft Sentinel</li>
+            <li>Wazuh</li>
+            <li>Splunk Enterprise</li>
+            <li>Defender XDR (MDE, MDI, MDO)</li>
+            <li>Entra ID Protection</li>
+          </ul>
+        </div>
+        <div class="skill-group">
+          <h4>Query languages</h4>
+          <ul>
+            <li>KQL</li>
+            <li>SPL</li>
+          </ul>
+        </div>
+        <div class="skill-group">
+          <h4>Frameworks</h4>
+          <ul>
+            <li>MITRE ATT&amp;CK</li>
+            <li>Cyber Kill Chain</li>
+            <li>NIST SP 800-61</li>
+          </ul>
+        </div>
+        <div class="skill-group">
+          <h4>Network &amp; forensics</h4>
+          <ul>
+            <li>Wireshark</li>
+            <li>Nmap</li>
+            <li>TCP/IP, DNS, ARP analysis</li>
+          </ul>
+        </div>
+        <div class="skill-group">
+          <h4>Operations</h4>
+          <ul>
+            <li>Alert triage</li>
+            <li>IOC analysis</li>
+            <li>False-positive tuning</li>
+            <li>Escalation &amp; incident reporting</li>
+            <li>Shift handover</li>
+          </ul>
+        </div>
+      </div>
+
+      <h3 class="sub">Certifications</h3>
+      <div class="certs">
+        <div class="cert"><strong>CompTIA Security+</strong><span>SY0-701 · Certified</span></div>
+        <div class="cert"><strong>Certified Cyber Security Analyst</strong><span>C3SA · Cyber Warfare Labs</span></div>
+        <div class="cert"><strong>Blue Team Fundamentals</strong><span>Cyber Warfare Labs</span></div>
+        <div class="cert"><strong>Google Cybersecurity Certificate</strong><span>Google</span></div>
+      </div>
+
+      <h3 class="sub">Education</h3>
+      <p><strong>Master of Computer Applications</strong>, Dayananda Sagar Academy of Technology and Management, Bengaluru · 2022–2024 · CGPA 8.3</p>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section contact reveal band bg-secure">
+      <p class="section-tag">05 // contact</p>
+      <h2>Let's talk</h2>
+      <p class="lead">Open to SOC analyst roles, especially rotational shifts. The fastest way to reach me is email.</p>
+      <a class="email" href="mailto:harireddy792@gmail.com">harireddy792@gmail.com</a>
+      <div class="socials">
+        <a href="https://linkedin.com/in/hari-reddy-profile" target="_blank" rel="noopener">LinkedIn ↗</a>
+        <a href="tel:+917032947406">+91 70329 47406</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© <span id="year"></span> Komma Hari Krishna Reddy · Built with plain HTML, CSS &amp; JS</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
